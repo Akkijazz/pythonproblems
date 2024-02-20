@@ -24,14 +24,29 @@
 # print(count)
 
 
-def calculateFactorsSum(n1: int, n2: int) -> None:
-    i: int = 1
-    sum: int = 0
-    while i <= n1:
-        if i % n2 == 0:
-            sum = sum + i
+# def calculateFactorsSum(n1: int, n2: int) -> None:
+#     i: int = 1
+#     sum: int = 0
+#     while i <= n1:
+#         if i % n2 == 0:
+#             sum = sum + i
+#         i += 1
+#     print(sum)
+
+
+# calculateFactorsSum(30, 7)
+
+
+# 1 11 101 1001 10001 100001
+def pattern(num: int) -> None:
+    i: int = 0
+    while i <= num - 1:
+        if i == 0:
+            print(10**i, end=" ")
+        else:
+            print(f"{(10**i)+1}", end=" ")
         i += 1
-    print(sum)
+    print()
 
 
-calculateFactorsSum(30, 7)
+pattern(10)
