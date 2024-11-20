@@ -1,0 +1,16 @@
+class Animal:
+    def __init__(self, name) -> None:
+        self.name = name
+
+    def eat(self, eat) -> None:
+        print(f"{self.name} is eating :{self.eat}")
+
+
+class dog(Animal):
+    def fetch(self, thing) -> None:
+        self.thing = thing
+        print(f"{self.name} goes after {self.thing}")
+
+
+d = dog("Ranger")
+d.fetch("ball")
