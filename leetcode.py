@@ -40,5 +40,8 @@ class Solution:
         pass
 
 
+
+
+
 s = Solution()
 s.twoSum([3, 2, 4], 6)
